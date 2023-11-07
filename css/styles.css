@@ -1,16 +1,24 @@
 :root {
-  --clr-primary-400: hsl(235, 75%, 60%);    /* CTAs Focused Active states Links */
-  --clr-primary-500: hsl(235, 50%, 50%);    /* CTAs btn */
-  --clr-slate-500: hsl(237, 12%, 30%);      /* Body text */
-  --clr-slate-700: hsl(237, 18%, 22%);      /* Overlays Shadows Headings */
-  --clr-green: hsl(166, 63%, 50%);          /* Valid fields Success messages */
-  --clr-lightslate: hsl(235, 5%, 58%);      /* Helper text Deemphasized text */
-  --clr-cornflower: hsl(234, 78%, 95%);     /* Accent color Hairlines Subtle backgrounds */
-  --clr-cloud: hsl(240, 69%, 97%);          /* Light mode backgrounds Light mode Dialogs/alerts */
-  --clr-modal: hsla(237, 18%, 22%, 0.4);    /* Modal overlay */
-  --clr-grey: hsl(237, 18%, 22%);           /* Hero background */
-  --clr-white: hsl(0, 0%, 100%);             /* Header,  team card background */
-  --clr-dairy: hsl(0, 0%, 99%);             /* modal background */
+  --clr-primary-400: hsl(235, 75%, 60%); /* CTAs Focused Active states Links */
+  --clr-primary-500: hsl(235, 50%, 50%); /* CTAs btn */
+  --clr-slate-500: hsl(237, 12%, 30%); /* Body text */
+  --clr-slate-700: hsl(237, 18%, 22%); /* Overlays Shadows Headings */
+  --clr-green: hsl(166, 63%, 50%); /* Valid fields Success messages */
+  --clr-lightslate: hsl(235, 5%, 58%); /* Helper text Deemphasized text */
+  --clr-cornflower: hsl(
+    234,
+    78%,
+    95%
+  ); /* Accent color Hairlines Subtle backgrounds */
+  --clr-cloud: hsl(
+    240,
+    69%,
+    97%
+  ); /* Light mode backgrounds Light mode Dialogs/alerts */
+  --clr-modal: hsla(237, 18%, 22%, 0.4); /* Modal overlay */
+  --clr-grey: hsl(237, 18%, 22%); /* Hero background */
+  --clr-white: hsl(0, 0%, 100%); /* Header,  team card background */
+  --clr-dairy: hsl(0, 0%, 99%); /* modal background */
 }
 /* Remove default margin in favour of better control in authored CSS */
 /* body, h1, h2, h3, h4, p,
@@ -112,9 +120,19 @@ p {
 
 .container {
   max-width: 1440px;
-  width: 1158px;
+  width: 318px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 582px;
+  }
+}
+@media (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
 }
 
 .flex {
@@ -140,9 +158,16 @@ p {
 .second-section,
 .team,
 .portfolio {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
+@media (min-width: 1158px) {
+  .second-section,
+  .team,
+  .portfolio {
+    padding: 120px 0;
+  }
+}
 /* Header section */
 
 .header {
@@ -207,7 +232,7 @@ p {
 
 /* Hero section */
 .hero {
-  padding: 188px 0;
+  padding: 72px 0;
   max-width: 1440px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -221,10 +246,28 @@ p {
   background-color: var(--clr-slate-700);
 }
 .hero-title {
-  max-width: 496px;
-  margin: 0 auto 48px auto;
+  max-width: 288px;
+  margin: 0 auto 72px auto;
   color: var(--clr-white);
 }
+@media (min-width: 768px) {
+  .hero {
+    padding: 112px 0;
+  }
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+  }
+  .hero-title {
+    margin-bottom: 48px;
+  }
+}
+
 .btn {
   padding: 16px 32px;
   letter-spacing: 0.64px;
@@ -255,11 +298,28 @@ p {
 .box-social-icon,
 .portfolio-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
-.second-section-list-item {
-  width: calc((100% - 3 * 24px) / 4);
+@media (min-width: 768px) {
+  .second-section-list-item,
+  .team-list-item,
+  .portfolio-list-item,
+  .col-2 {
+    width: calc((100% - 24px) / 2);
+  }
 }
+@media (min-width: 1158px) {
+  .second-section-list-item,
+  .team-list-item,
+  .col-4 {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .portfolio-list-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+}
+
 .svg-box {
   display: flex;
   justify-content: center;
@@ -274,7 +334,6 @@ p {
   background-color: var(--clr-cloud);
 }
 .team-list-item {
-  width: calc((100% - 3 * 24px) / 4);
   text-align: center;
   background-color: var(--clr-white);
   border-radius: 0px 0px 4px 4px;
@@ -310,12 +369,10 @@ p {
 }
 
 .portfolio-list {
-  flex-wrap: wrap;
   row-gap: 48px;
   background-color: var(--clr-white);
 }
 .portfolio-list-item {
-  width: calc((100% - 2 * 24px) / 3);
   background: var(--clr-white);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -355,15 +412,30 @@ p {
 }
 
 .footer {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: var(--clr-slate-700);
 }
 .footer .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+}
+.footer .container {
   align-items: baseline;
 }
-.footer-col {
-  margin-right: 120px;
+@media (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-col {
+    margin-right: 120px;
+  }
+  .social-media {
+    margin-right: 80px;
+  }
 }
 .footer-logo {
   display: inline-block;
@@ -376,9 +448,7 @@ p {
   max-width: 264px;
   color: var(--clr-cloud);
 }
-.social-media {
-  margin-right: 80px;
-}
+
 .social-title {
   margin-bottom: 16px;
   font-weight: 500;
@@ -405,6 +475,7 @@ p {
 }
 .form-sub {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .form-input {
@@ -444,7 +515,7 @@ p {
 
 /* The Modal (background) */
 .modal {
-/*   display: none;  */ /* Hidden by default */
+  /*   display: none;  */ /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -625,4 +696,23 @@ p {
   align-self: center;
   width: 169px;
   height: 56px;
+}
+@media (max-width: 768px) {
+  .footer .container {
+    gap: 72px;
+  }
+  .form-sub {
+    gap: 16px;
+    justify-content: center;
+  }
+  .form-title,
+  .footer-logo,
+  .social-title{
+    text-align: center;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
