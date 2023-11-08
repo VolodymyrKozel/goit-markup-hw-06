@@ -171,7 +171,9 @@ p {
   }
 }
 /* Header section */
-
+  .mob-menu {
+    display: none;
+  }
 .header {
   border-bottom: 1px solid var(--clr-cornflower);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -193,6 +195,12 @@ p {
 .header-address-list {
   display: flex;
   gap: 40px;
+}
+@media (min-width: 768px) and (max-width: 1158px) {
+  .header-address-list {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 .header-menu-link {
   position: relative;
@@ -260,6 +268,9 @@ p {
     max-width: 496px;
     margin-bottom: 36px;
   }
+  .icon-hamburger {
+    display: none; /* Hidden by default */
+  }
 }
 @media (min-width: 1158px) {
   .hero {
@@ -299,14 +310,21 @@ p {
 .second-section-list,
 .team-list,
 .box-social-icon,
-.portfolio-list {
+.portfolio-list,
+.footer .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.second-section-list-item,
+.portfolio-list-item {
+  width: 288px;
 }
 @media (min-width: 768px) {
   .second-section-list-item,
+  .portfolio-list-item,
   .team-list-item,
   .col-2 {
     width: calc((100% - 24px) / 2);
@@ -715,7 +733,15 @@ p {
   width: 169px;
   height: 56px;
 }
+
+
 @media (max-width: 768px) {
+  .team-list {
+    flex-direction: column;
+  }
+  .team-list-item {
+    width: 264px;
+  }
   .footer .container {
     gap: 72px;
   }
@@ -733,14 +759,26 @@ p {
     flex-direction: column;
     justify-content: center;
   }
+  .header .header-menu,
+  .header .header-address {
+    display: none;
+  }
+  .icon-hamburger {
+    display: block;
+    padding: 16px 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
   .mob-menu {
-    /*   display: none;  */ /* Hidden by default */
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 48px;
     padding-bottom: 40px;
+    width: 320px;
     z-index: 999; /* Sit on top */
     left: 0;
     top: 0;
@@ -748,6 +786,9 @@ p {
     height: 100vh; /* Full height */
     overflow: hidden;
     background-color: var(--clr-white);
+  }
+.content {
+    width: 320px;
   }
   .mob-menu .header-menu-link {
     margin-bottom: 16px;
@@ -771,7 +812,7 @@ p {
   .header-address-list-li {
     margin-bottom: 24px;
   }
-  .box-social-icon {
+  .mob-menu .box-social-icon {
     justify-content: space-between;
   }
 }
