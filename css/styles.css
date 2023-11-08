@@ -320,7 +320,7 @@ p {
 }
 .second-section-list-item,
 .portfolio-list-item {
-  width: 288px;
+  min-width: 288px;
 }
 @media (min-width: 768px) {
   .second-section-list-item,
@@ -740,7 +740,7 @@ p {
     flex-direction: column;
   }
   .team-list-item {
-    width: 264px;
+    min-width: 264px;
   }
   .footer .container {
     gap: 72px;
