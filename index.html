@@ -20,6 +20,88 @@
     <title>WEBSTUDIO | Effective Solutions for Your Business</title>
   </head>
   <body>
+    <div id="mobile-menu" class="mob-menu container">
+      <button
+        id="close-menu"
+        class="btn-close"
+        type="button"
+        onclick="closeMobMenu()"
+      >
+        <svg class="icon-svg" width="8" height="8">
+          <use class="use-icon" href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="header-menu-li">
+          <a class="header-menu-link" href="./index.html">Studio</a>
+        </li>
+        <li class="header-menu-li">
+          <a class="header-menu-link" href="">Portfolio</a>
+        </li>
+        <li class="header-menu-li">
+          <a class="header-menu-link" href="">Contacts</a>
+        </li>
+      </ul>
+        <div class="contacts">
+          <address class="mobile-address">
+            <ul class="mobile-address-list">
+              <li class="header-address-list-li">
+                <a class="header-address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="header-address-list-li">
+                <a class="header-address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="box-social-icon">
+            <li class="social-list-item">
+              <a class="social-icon-link" href="#">
+                <svg class="icon-svg" width="16" height="16">
+                  <use
+                    class="use-icon"
+                    href="./images/icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-icon-link" href="#">
+                <svg class="icon-svg" width="16" height="16">
+                  <use
+                    class="use-icon"
+                    href="./images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-icon-link" href="#">
+                <svg class="icon-svg" width="16" height="16">
+                  <use
+                    class="use-icon"
+                    href="./images/icons.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-icon-link" href="#">
+                <svg class="icon-svg" width="16" height="16">
+                  <use
+                    class="use-icon"
+                    href="./images/icons.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
     <header class="header">
       <div class="container flex">
         <nav class="header-nav">
@@ -60,7 +142,9 @@
           <h1 class="hero-title main-heading">
             Effective Solutions for Your Business
           </h1>
-          <button class="btn hero-btn" type="button" onclick="openModal()">Order Service</button>
+          <button class="btn hero-btn" type="button" onclick="openModal()">
+            Order Service
+          </button>
         </div>
       </section>
       <section class="second-section">
@@ -146,7 +230,7 @@
                 </h3>
                 <p class="team-list-text">Product Designer</p>
                 <ul class="box-social-icon">
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -156,7 +240,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -166,7 +250,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -176,7 +260,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -199,7 +283,7 @@
                 <h3 class="team-list-item-box-title third-heading">Tom Ford</h3>
                 <p class="team-list-text">Frontend Developer</p>
                 <ul class="box-social-icon">
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -209,7 +293,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -219,7 +303,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -229,7 +313,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -254,7 +338,7 @@
                 </h3>
                 <p class="team-list-text">Marketing</p>
                 <ul class="box-social-icon">
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -264,7 +348,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -274,7 +358,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -284,7 +368,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -309,7 +393,7 @@
                 </h3>
                 <p class="team-list-text">UI Designer</p>
                 <ul class="box-social-icon">
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -319,7 +403,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -329,7 +413,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -339,7 +423,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon-item">
+                  <li class="social-list-item">
                     <a class="social-icon-link" href="#">
                       <svg class="icon-svg" width="16" height="16">
                         <use
@@ -550,16 +634,24 @@
             <button class="form-btn" type="submit">
               Subscribe
               <svg class="icon-btn icon-svg" width="24" height="24">
-                <use class="use-icon" href="./images/icons.svg#icon-plane"></use>
+                <use
+                  class="use-icon"
+                  href="./images/icons.svg#icon-plane"
+                ></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
-    <div id="modalWindow" class="modal is-close">
+    <div id="modalWindow" class="modal is-close ">
       <div class="modal-content">
-        <button id="close" class="btn-close" type="button" onclick="closeModal()">
+        <button
+          id="close"
+          class="btn-close"
+          type="button"
+          onclick="closeModal()"
+        >
           <svg class="icon-svg" width="8" height="8">
             <use class="use-icon" href="./images/icons.svg#icon-close"></use>
           </svg>

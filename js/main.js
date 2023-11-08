@@ -1,6 +1,10 @@
 const heroBtn = document.querySelector(".hero-btn");
-const closeBtn = document.getElementById("close");
+const closeBtn = document.getElementById("mobile-menu");
 
+function closeMobMenu() {
+  const closeBtn = document.getElementById("mobile-menu");
+  closeBtn.classList.add("is-close");
+}
 function openModal() {
   const modalWindow = document.getElementById("modalWindow");
   modalWindow.classList.remove("is-close");
