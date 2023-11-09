@@ -21,8 +21,7 @@
   </head>
   <body>
     <div id="mobile-menu" class="mob-menu container is-close">
-      <div class="content">
-        <button
+      <button
         id="close-menu"
         class="btn-close"
         type="button"
@@ -37,10 +36,10 @@
           <a class="header-menu-link" href="./index.html">Studio</a>
         </li>
         <li class="header-menu-li">
-          <a class="header-menu-link" href="">Portfolio</a>
+          <a class="header-menu-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="header-menu-li">
-          <a class="header-menu-link" href="">Contacts</a>
+          <a class="header-menu-link" href="#contacts">Contacts</a>
         </li>
       </ul>
       <div class="contacts">
@@ -101,11 +100,10 @@
           </li>
         </ul>
       </div>
-      </div>
-
     </div>
 
-    <header class="header">
+    <header id="top-header" class="header">
+      
       <div class="container flex">
         <nav class="header-nav">
           <a class="header-logo logo-typography" href="./index.html"
@@ -116,10 +114,10 @@
               <a class="header-menu-link" href="./index.html">Studio</a>
             </li>
             <li class="header-menu-li">
-              <a class="header-menu-link" href="">Portfolio</a>
+              <a class="header-menu-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="header-menu-li">
-              <a class="header-menu-link" href="">Contacts</a>
+              <a class="header-menu-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -236,6 +234,10 @@
           <ul class="team-list">
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/Mark-Guerrero.jpg    1x,
+                  ./images/Mark-Guerrero@2x.jpg 2x
+                "
                 src="./images/Mark-Guerrero.jpg"
                 alt="photo of Mark Guerrero"
                 width="264"
@@ -291,6 +293,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/Tom-Ford.jpg 1x, ./images/Tom-Ford@2x.jpg 2x"
                 src="./images/Tom-Ford.jpg"
                 alt="photo of Tom Ford"
                 width="264"
@@ -344,6 +347,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/Camila-Garcia.jpg    1x,
+                  ./images/Camila-Garcia@2x.jpg 2x
+                "
                 src="./images/Camila-Garcia.jpg"
                 alt="photo of Camila Garcia"
                 width="264"
@@ -399,6 +406,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/Daniel-Wilson.jpg    1x,
+                  ./images/Daniel-Wilson@2x.jpg 2x
+                "
                 src="./images/Daniel-Wilson.jpg"
                 alt="photo of Daniel Wilson"
                 width="264"
@@ -455,13 +466,17 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="container">
           <h2 class="portfolio-title second-heading">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="container-overlay">
                 <img
+                  srcset="
+                    ./images/Banking-App.jpg   1x,
+                    /images/Banking-App@2x.jpg 2x
+                  "
                   src="./images/Banking-App.jpg"
                   alt="illustration of a mobile application"
                   width="360"
@@ -480,6 +495,10 @@
             <li class="portfolio-list-item">
               <div class="container-overlay">
                 <img
+                  srcset="
+                    ./images/Cashless-Payment.jpg    1x,
+                    ./images/Cashless-Payment@2x.jpg 2x
+                  "
                   src="./images/Cashless-Payment.jpg"
                   alt="mobile phones with NFC capabilities complete transactions through contactless payment devices"
                   width="360"
@@ -500,6 +519,10 @@
             <li class="portfolio-list-item">
               <div class="container-overlay">
                 <img
+                  srcset="
+                    ./images/Meditation-App.jpg    1x,
+                    ./images/Meditation-App@2x.jpg 2x
+                  "
                   src="./images/Meditation-App.jpg"
                   alt="in an illustration displaying the appearance of the Meditation App on a laptop and a phone"
                   width="360"
@@ -520,6 +543,10 @@
             <li class="portfolio-list-item">
               <div class="container-overlay">
                 <img
+                  srcset="
+                    ./images/Taxi-Service.jpg    1x,
+                    ./images/Taxi-Service@2x.jpg 2x
+                  "
                   src="./images/Taxi-Service.jpg"
                   alt="the image shows a car's front, with the driver's hands on the steering wheel. A phone on the dashboard displays an active taxi service app"
                   width="360"
@@ -538,6 +565,10 @@
             <li class="portfolio-list-item">
               <div class="container-overlay">
                 <img
+                  srcset="
+                    ./images/Screen-Illustrations.jpg    1x,
+                    ./images/Screen-Illustrations@2x.jpg 2x
+                  "
                   src="./images/Screen-Illustrations.jpg"
                   alt="in the image, on the left, there is a phone with a wallpaper displayed, while on the right, there is a collage with various designs of a similar style."
                   width="360"
@@ -558,6 +589,10 @@
             <li class="portfolio-list-item">
               <div class="container-overlay">
                 <img
+                  srcset="
+                    ./images/Online-Courses.jpg    1x,
+                    ./images/Online-Courses@2x.jpg 2x
+                  "
                   src="./images/Online-Courses.jpg"
                   alt="a happy young woman, wearing headphones, gazes at her phone."
                   width="360"
@@ -579,7 +614,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="contacts" class="footer">
       <div class="container flex-centered">
         <div class="footer-col item">
           <a class="footer-logo logo-typography" href="./index.html"
