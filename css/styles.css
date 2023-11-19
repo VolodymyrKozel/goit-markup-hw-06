@@ -137,7 +137,7 @@ p,
 }
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media (min-width: 1158px) {
@@ -619,7 +619,6 @@ p,
 /* Modal Content/Box */
 .modal-content {
   position: absolute;
-  align-items: center;
   padding: 72px 24px 24px 24px;
   width: 408px;
   min-height: 584px;
@@ -777,7 +776,6 @@ p,
   margin: 0 auto;
   min-width: 169px;
   display: block;
-  align-self: center;
   height: 56px;
 }
 
