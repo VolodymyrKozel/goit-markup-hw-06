@@ -1,7 +1,4 @@
-# goit-markup-hw-05
-@media (min-width: 768px) {
+# goit-markup-hw-06
 
-}
-@media (min-width: 1158px) {
-
-}
+## Адаптивний дизайн
+[GitHub-pages](https://volodymyrkozel.github.io/goit-markup-hw-06/)
