@@ -866,12 +866,15 @@ p,
   .container {
     max-width: 320px;
   }
+  .header .container {
+    max-width: 767px;
+  }
   .second-section-list,
   .team-list,
   .footer .container {
     gap: 72px;
   }
-  .footer .social-list-item{
+  .footer .social-media{
     margin: 0 auto;
   }
 
