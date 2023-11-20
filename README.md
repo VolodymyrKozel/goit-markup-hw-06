@@ -1,7 +1,2 @@
 # goit-markup-hw-05
-@media (min-width: 768px) {
-
-}
-@media (min-width: 1158px) {
-
-}
+[GitHub-pages](https://volodymyrkozel.github.io/goit-markup-hw-06/)
