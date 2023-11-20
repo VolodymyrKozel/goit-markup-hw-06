@@ -153,7 +153,7 @@ p,
   align-items: center;
 }
 
-/* padding section top bottom 96pxpx */
+/* padding section top bottom 96px */
 .second-section,
 .team,
 .portfolio {
@@ -356,7 +356,7 @@ p,
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 .footer .container {
@@ -455,8 +455,11 @@ p,
 .social-icon-link:focus {
   background-color: var(--clr-primary-500);
 }
-/*  third section */
+/*  portfolio section */
 
+.portfolio h3 {
+  text-align: left;
+}
 .portfolio-list {
   row-gap: 48px;
   background-color: var(--clr-white);
@@ -751,9 +754,6 @@ p,
   letter-spacing: 0.04em;
   color: var(--clr-lightslate);
 }
-.form-label-checkbox {
-  letter-spacing: 0.04em;
-}
 /* Create a custom checkbox */
 .form-label-span {
   display: inline-flex;
@@ -787,6 +787,7 @@ p,
 
 @media (max-width: 767px) {
   .modal-content {
+    padding: 72px 16px 24px 16px;
     width: 288px;
   }
   .team-list-item {
@@ -874,10 +875,9 @@ p,
   .footer .container {
     gap: 72px;
   }
-  .footer .social-media{
+  .footer .social-media {
     margin: 0 auto;
   }
-
 }
 @media (min-width: 768px) and (max-width: 1157px) {
   .team .container,
