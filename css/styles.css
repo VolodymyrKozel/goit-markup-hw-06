@@ -455,6 +455,11 @@ p,
 .social-icon-link:focus {
   background-color: var(--clr-primary-500);
 }
+
+.social-icon-link:hover + svg,
+.social-icon-link:focus + svg{
+  animation: shake 1s;
+}
 /*  portfolio section */
 
 .portfolio h3 {
@@ -901,4 +906,35 @@ p,
   .header-logo {
     margin-right: 120px;
   }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  10% {
+    transform: rotate(-10deg);
+  }
+  
+  20% {
+    transform: rotate(10deg);
+  }
+  
+  30% {
+    transform: rotate(-10deg);
+  }
+  
+  40% {
+    transform: rotate(10deg);
+  }
+  
+  50% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(0deg);
+  }
+  
 }
