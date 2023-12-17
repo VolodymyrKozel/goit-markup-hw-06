@@ -456,8 +456,8 @@ p,
   background-color: var(--clr-primary-500);
 }
 
-.social-icon-link:hover + svg,
-.social-icon-link:focus + svg{
+.social-icon-link:hover svg,
+.social-icon-link:focus svg{
   animation: shake 1s;
 }
 /*  portfolio section */
